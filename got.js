@@ -12,8 +12,8 @@ for(var i = 0; i <109; i++)
 
 var charnames = 
 		[
-			maesteraemon = {og:"Aemon Maester",titlepic:"maester aemon",family:"targaryen",bg:"red"}	
-			,anguy = {og:"Anguy",titlepic:"anguy",family:"brotherhood w/o banners",bg:"#525252"}
+			maesteraemon = {og:"Aemon Maester",titlepic:"maester aemon",family:"targaryen",bg:"red",appearance:"blue"}	
+			,anguy = {og:"Anguy",titlepic:"anguy",family:"brotherhood w/o banners",bg:"#525252",appearance:"green"}
 			,robinarryn   = {og:"Arryn Robin  ",titlepic:"robin arryn",family:"arryn",bg:"#5480E0"}
 			,petyrbaelish = {og:"Baelish Petyr",titlepic:"petyr baelish",family:"tully",bg:"#76BD88"}
 			,joffreybaratheon = {og:"Baratheon Joffrey",titlepic:"joffrey baratheon",family:"baratheon",bg:"#FFD700"}
@@ -158,10 +158,22 @@ var charnames =
 					$(this).text(xactuall);
 				});
 
+			$(".b").each(function(i)
+				{	
+					var ttl = $(this).parent().attr("id");
+					var xactualll = charnames[ttl].appearance
+					$(this).css("background-color",xactualll);
+				});
+
+
+
 		});
 
 	$("#family").click(function()
 		{
+			$(this).hide();
+			$("#name").show();
+			$("#fname").show();			
 			function SortByName(a, b)
 			{
 			  var aName = a.family.toLowerCase();
@@ -207,6 +219,8 @@ var charnames =
 
 	$("#name").click(function()
 		{
+			$(this).hide();
+			$("#family").show();
 			function SortByName(a, b)
 			{
 			  var aName = a.og.toLowerCase();
@@ -250,7 +264,53 @@ var charnames =
 
 		});
 
+	$("#fname").click(function()
+		{
+			$(this).hide();
+			$("#family").show();
+			$("#name").show();
+			function SortByName(a, b)
+			{
+			  var aName = a.titlepic.toLowerCase();
+			  var bName = b.titlepic.toLowerCase();
+			  return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+			}
 
+			charnames.sort(SortByName);
+
+
+			$(".profpics").each(function(i)
+				{
+
+
+					 $(this).each(function(i)
+					 	{
+					 		var ttl = $(this).parent().attr("id");
+							var xactual = charnames[ttl]
+							console.log(xactual);
+							var z = (xactual.titlepic)
+							$(this).attr("id",z);
+
+							$(this).attr("src","got/"+z+".jpg");
+						});
+							
+					$(".proftitle").each(function(i)
+						{	
+							var ttl = $(this).parent().attr("id");
+							var xactual = charnames[ttl].titlepic.toUpperCase()
+							$(this).text(xactual);
+						});
+					$(".family").each(function(i)
+						{	
+							var ttl = $(this).parent().attr("id");
+							var xactuall = charnames[ttl].family.toUpperCase()
+							$(this).text(xactuall);
+							$(this).css("background-color","white");
+						});
+
+				});
+
+		});
 
 
 
