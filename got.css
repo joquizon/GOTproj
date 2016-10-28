@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+
+    /* HTML5 display-role reset for older browsers */
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+
+@font-face {font-family:tnewr;
+            src: url(nimbustnew.otf);}
+#title{    
+	font-family: tnewr;
+    font-size: 6vw;
+    margin: 2%;
+cursor:pointer;}
+
+#family{    
+    font-family: tnewr;
+    font-size: 2vw;
+    margin: 2%;
+    right:0;
+    top:0;
+    position:fixed;
+cursor:pointer;}
+
+#holder{width:98%;
+	margin-left: 1%}
+.picholder {
+        text-align: center;
+    float: left;
+    width: 10%;
+    height: 13vw;
+    margin: 1%;
+    border: 1px black solid;}
+.proftitle{
+    font-family: tnewr;
+    font-size: .85vw;
+}
+.family{
+    font-family: tnewr;
+    font-size: .75vw;
+}
+.profpics {
+    width: 86%;
+	margin-top: 10%}
