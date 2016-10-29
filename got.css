@@ -109,40 +109,85 @@
       display: block;
     }
 
-
+a{text-decoration: none;
+text-align: center;
+color:black;
+display:block;}
 @font-face {font-family:tnewr;
             src: url(nimbustnew.otf);}
-#title{    
-	font-family: tnewr;
-    font-size: 6vw;
-    margin: 2%;
-cursor:pointer;}
+            #loader{display: none;}
+#title{
+    color: white;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    /* top: 29%; */
+    background-color: #181818;
+    width: 98%;
+    font-family: tnewr;
+    font-size: 3vw;
+    /* margin-left: 3%; */
+    /* margin-top: 4%; */
+    line-height: 3vw;
+    margin-bottom: 1%;
+    height: 16vw;}
+
+#infotitle{    line-height: 1vw;
+    font-family: tnewr;
+    font-size: 1.25vw;
+    /* margin-left: 2%; */}
+
+
+.notouch{
+  pointer-events: none;
+}
+
+
+#guest{background-color: #C9A735;
+color:#C9A735;
+font-family: helvetica;}
+#reccur{background-color: #5A5A5A;
+color:#5A5A5A;
+font-family: helvetica;}
+#star{background-color: black;
+    color:black;
+font-family: helvetica;}    
 
 .sorter{
-    color:white;
-    background-color: black;    
-    font-family: tnewr;
-    font-size: 2vw;
-    margin: 2%;
-    right:0;
-    top:0;
-    position:fixed;
-cursor:pointer;}
+cursor: pointer;
+    top: 1%;
+    right: 4.5%;
+    position: fixed;
+    width: 3%;}
+
+.sorter2{
+cursor: pointer;
+    top: 1%;
+    right: 1%;
+    position: fixed;
+    width: 3%;}
+
+
+
+#family{right: 1%;}
+
 #name{display: none;}
-#fname{top:3%;}
+
+
 
 #holder{width:98%;
-	margin-left: 1%}
+        margin-top: .5%;
+	margin-left: 1%;}
 .picholder {
         text-align: center;
     float: left;
-    width: 10%;
-    height: 16vw;
-    margin: 1%;
+    width: 6%;
+    height: 14vw;
+    margin: .25%;
     border: 1px black solid;}
 .proftitle{
     font-family: tnewr;
-    font-size: .85vw;
+    font-size: .8vw;
 }
 .family{
     font-family: tnewr;
@@ -152,37 +197,46 @@ cursor:pointer;}
     width: 86%;
 	margin-top: 10%}
 
-.a{font-family: tnewr;
-    font-size:1.25vw;
-    margin-top: 2%;
-    display: inline-block;}
 
-.b{font-family: tnewr;
-    font-size:1.25vw;
-    margin-top: 2%;
-    display: inline-block;}
+/*seasons*/
+    .a{font-family: helvetica;
+        color:white;
+        font-size:.9vw;
+        margin-top: 2%;
+        display: inline-block;}
 
-.c{font-family: tnewr;
-    font-size:1.25vw;
-    margin-top: 2%;
-    display: inline-block;}
+    .b{font-family: helvetica;
+        color:white;
+        font-size:.9vw;
+        margin-top: 2%;
+        display: inline-block;}
+
+    .c{font-family: helvetica;
+        color:white;
+        font-size:.9vw;
+        margin-top: 2%;
+        display: inline-block;}
 
 
-.d{font-family: tnewr;
-    font-size:1.25vw;
-    margin-top: 2%;
-    display: inline-block;}
+    .d{font-family: helvetica;
+        color:white;
+        font-size:.9vw;
+        margin-top: 2%;
+        display: inline-block;}
 
-.e{font-family: tnewr;
-    font-size:1.25vw;
-    margin-top: 2%;
-    display: inline-block;}
-.f{font-family: tnewr;
-    font-size:1.25vw;
-    margin-top: 2%;
-    display: inline-block;}
+    .e{font-family: helvetica;
+        color:white;
+        font-size:.9vw;
+        margin-top: 2%;
+        display: inline-block;}
+    .f{font-family: helvetica;
+        color:white;
+        font-size:.9vw;
+        margin-top: 2%;
+        display: inline-block;}
 
-.g{font-family: tnewr;
-    font-size:1.25vw;
-    margin-top: 2%;
-    display: inline-block;}
+    .g{font-family: helvetica;
+        color:white;
+        font-size:.9vw;
+        margin-top: 2%;
+        display: inline-block;}
