@@ -1,0 +1,156 @@
+/*PHONE portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media screen and (max-width: 567px)and (max-height: 768px){
+	#title {font-size: 5vw;
+    line-height: 3vw;
+    height: 54vw;
+    padding-top: 9%;}	
+
+    #infotitle {line-height: 4vw;
+    font-size: 3.5vw;
+    letter-spacing: 1px;}
+
+    .sorter {right: 9.5%;
+    width: 8%;}
+
+        .sorter2 {right: 1%;
+    width: 8%;}
+
+    .picholder {width: 23%;
+    height: 42vw;
+    margin: .6%;}
+
+    .proftitle {font-size: 2.5vw;}
+
+    .family {font-size: 2.5vw;}
+
+    .a {font-size: 3vw;}
+    .b {font-size: 3vw;}
+    .c {font-size: 3vw;} 
+    .d {font-size: 3vw;}
+    .e {font-size: 3vw;}
+    .f {font-size: 3vw;}
+    .g {font-size: 3vw;}
+}
+/*/*PHONE land screen>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media screen and (min-width: 568px)and (max-width: 960px)and (max-height: 414px){
+	#title {font-size: 3vw;
+	    line-height: 3vw;
+	    height: 29vw;
+	    padding-top: 4%;
+	     margin-bottom: 0%;}
+
+	#infotitle {line-height: 3vw;
+	    font-size: 2.5vw;
+	    letter-spacing: 1px;}
+
+	.sorter {right: 6.5%;
+	    width: 5%;}
+
+		.sorter2 {right: 1%;
+	    width: 5%;}
+
+	#holder {margin-top:0%;}
+
+	.picholder {width: 12%;
+	    height: 27vw;
+	    margin: .95%;}
+
+	.proftitle {font-size: 1.75vw;}
+
+	.family {font-size: 1.5vw;}
+
+	.a {font-size: 2vw;}
+	.b {font-size: 2vw;}
+	.c {font-size: 2vw;}
+	.d {font-size: 2vw;}
+	.e {font-size: 2vw;}
+	.f {font-size: 2vw;}
+	.g {font-size: 2vw;}
+}
+
+/*/*TABLET PORTRAIT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media screen and (max-width: 768px) and (min-height: 961px) and (max-height: 1024px){
+	#title {
+	    font-size: 5vw;
+	    line-height: 3vw;
+	    height: 33vw;
+	    padding-top: 6%;}
+
+	#infotitle {
+	    line-height: 2vw;
+	    font-size: 2vw;
+	    letter-spacing: 1px;}
+
+	.sorter {
+	    right: 7.5%;
+	    width: 6%;}
+
+		.sorter2 {
+	    right: 1%;
+	    width: 6%;}
+
+	.picholder {
+	    width: 12%;
+	    height: 26vw;
+	    margin: 1%;}
+
+	    .proftitle {font-size: 1.5vw;}
+
+	    .family {font-size: 1.5vw;}
+
+	    .a {font-size: 2vw;}
+	    .b {font-size: 2vw;}
+	    .c {font-size: 2vw;} 
+	    .d {font-size: 2vw;}
+	    .e {font-size: 2vw;}
+	    .f {font-size: 2vw;}
+	    .g {font-size: 2vw;}
+
+}
+
+/*tablet landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media screen and (min-height: 768px) and (min-width: 961px) and  (max-width: 1024px){
+
+
+#title {
+    font-size: 3vw;
+    line-height: 3vw;
+    height: 22.25vw;
+    padding-top: 4%;
+}
+
+		#infotitle {
+	    line-height: 2vw;
+	    font-size: 2vw;
+	    letter-spacing: 1px;}
+
+.sorter {
+    right: 6.5%;
+    width: 5%;
+}
+
+.sorter2 {
+    right: 1%;
+    width: 5%;
+}
+
+	.picholder {
+    width: 12%;
+    height: 25vw;
+    margin: 1%;}
+
+	    .proftitle {font-size: 1.5vw;}
+
+	    .family {font-size: 1.5vw;}
+
+	    .a {font-size: 2vw;}
+	    .b {font-size: 2vw;}
+	    .c {font-size: 2vw;} 
+	    .d {font-size: 2vw;}
+	    .e {font-size: 2vw;}
+	    .f {font-size: 2vw;}
+	    .g {font-size: 2vw;}    
+
+}
