@@ -17,14 +17,17 @@ for(var i = 0; i <109; i++)
 
 
 
-
+function JSSnippetsStack()
+{
+console.log("Ned's dead");
+};
 
 
 var charnames = 
 
 		[
 
-		maesteraemon = {linkname:"Maester_Aemon", og:"Aemon Maester",titlepic:"maester aemon",family:"targaryen",bg:"red",appearance1:"#5A5A5A",appearance2:"white",appearance3:"#C9A735",appearance4:"#5A5A5A",appearance5:"#5A5A5A",appearance6:"white",appearance7:"white"}
+		maesteraemon = {linkname:"Maester_Aemon", og:"Aemon Maester",titlepic:"maester aemon",family:"Targaryen",bg:"red",appearance1:"#5A5A5A",appearance2:"white",appearance3:"#C9A735",appearance4:"#5A5A5A",appearance5:"#5A5A5A",appearance6:"white",appearance7:"white"}
 
 
 
@@ -104,7 +107,7 @@ var charnames =
 
 
 
-			,khaldrogo = {linkname:"Khal_Drogo", og:"Drogo Khal",titlepic:"khal drogo",family:"dothraki",bg:"#9C9057",appearance1:"black",appearance2:"black",appearance3:"white",appearance4:"white",appearance5:"white",appearance6:"white",appearance7:"white"}
+			,khaldrogo = {linkname:"Khal_Drogo", og:"Drogo Khal",titlepic:"khal drogo",family:"Dothraki",bg:"#9C9057",appearance1:"black",appearance2:"black",appearance3:"white",appearance4:"white",appearance5:"white",appearance6:"white",appearance7:"white"}
 
 
 
@@ -136,7 +139,7 @@ var charnames =
 
 
 
-			,jaqenhghar = {linkname:"Jaqen_Hghar", og:"Hghar Jaqen",titlepic:"jaqen hghar",family:" ",bg:"red",appearance1:"#C9A735",appearance2:"#5a5a5a",appearance3:"white",appearance4:"white",appearance5:"black",appearance6:"black",appearance7:"white"}
+			,jaqenhghar = {linkname:"Jaqen_H%27ghar", og:"Hghar Jaqen",titlepic:"jaqen hghar",family:" ",bg:"red",appearance1:"#C9A735",appearance2:"#5a5a5a",appearance3:"white",appearance4:"white",appearance5:"black",appearance6:"black",appearance7:"white"}
 
 
 
@@ -160,11 +163,11 @@ var charnames =
 
 
 
-			,rickardkarstark = {linkname:"Karstark_Rickard", og:"Rickard Karstark",titlepic:"rickard karstark",family:"stark",bg:"#A1C1C6",appearance1:"$5A5A5A",appearance2:"#5A5A5A",appearance3:"$5A5A5A",appearance4:"white",appearance5:"white",appearance6:"white",appearance7:"white"}
+			,rickardkarstark = {linkname:"Rickard_Karstark", og:"Rickard Karstark",titlepic:"rickard karstark",family:"stark",bg:"#A1C1C6",appearance1:"$5A5A5A",appearance2:"#5A5A5A",appearance3:"$5A5A5A",appearance4:"white",appearance5:"white",appearance6:"white",appearance7:"white"}
 
 
 
-			,kovarro= {linkname:"Kovarro", og:"Kovarro",titlepic:"kovarro",family:"dothraki",bg:"#9C9057",appearance1:"white",appearance2:"#5A5A5A",appearance3:"white",appearance4:"white",appearance5:"white",appearance6:"white",appearance7:"white"}
+			,kovarro= {linkname:"Kovarro", og:"Kovarro",titlepic:"kovarro",family:"Dothraki",bg:"#9C9057",appearance1:"white",appearance2:"#5A5A5A",appearance3:"white",appearance4:"white",appearance5:"white",appearance6:"white",appearance7:"white"}
 
 
 
@@ -276,7 +279,7 @@ var charnames =
 
 
 
-			,qotho= {linkname:"Qotho", og:"Qotho",titlepic:"qotho",family:"dothraki",bg:"#9C9057",appearance1:"#5A5A5A",appearance2:"white",appearance3:"white",appearance4:"white",appearance5:"white",appearance6:"white",appearance7:"white"}
+			,qotho= {linkname:"Qotho", og:"Qotho",titlepic:"qotho",family:"Dothraki",bg:"#9C9057",appearance1:"#5A5A5A",appearance2:"white",appearance3:"white",appearance4:"white",appearance5:"white",appearance6:"white",appearance7:"white"}
 
 
 
@@ -388,7 +391,7 @@ var charnames =
 
 
 
-			,tarlysamwell = {linkname:"Tarly_Samwell", og:"Samwell Tarly",titlepic:"samwell tarly",family:"Night's Watch",bg:"#737CB6",appearance1:"#5a5a5a",appearance2:"black",appearance3:"black",appearance4:"black",appearance5:"black",appearance6:"black",appearance7:"black"}	
+			,tarlysamwell = {linkname:"Samwell_Tarly", og:"Samwell Tarly",titlepic:"samwell tarly",family:"Night's Watch",bg:"#737CB6",appearance1:"#5a5a5a",appearance2:"black",appearance3:"black",appearance4:"black",appearance5:"black",appearance6:"black",appearance7:"black"}	
 
 
 
@@ -436,7 +439,7 @@ var charnames =
 
 
 
-			,septaunella = {linkname:"Septa_Unella", og:"Unella Septa",titlepic:"septa unella",family:"faith militant",bg:"#408A75",appearance1:"white",appearance2:"white",appearance3:"white",appearance4:"white",appearance5:"#5A5A5A",appearance6:"#5A5A5A",appearance7:"white"}
+			,septaunella = {linkname:"Unella", og:"Unella",titlepic:"unella",family:"faith militant",bg:"#408A75",appearance1:"white",appearance2:"white",appearance3:"white",appearance4:"white",appearance5:"#5A5A5A",appearance6:"#5A5A5A",appearance7:"white"}
 
 
 
@@ -486,17 +489,17 @@ var charnames =
 
 		{
 
-			$(".links").each(function(i)
+			// $(".links").each(function(i)
 
-			 	{
+			//  	{
 
-			 		var ttl = $(this).parent().attr("id");
+			//  		var ttl = $(this).parent().attr("id");
 
-					var xactuallinks = charnames[ttl].linkname
+			// 		var xactuallinks = charnames[ttl].linkname
 
-					$(this).attr("id",xactuallinks);
+			// 		$(this).attr("id",xactuallinks);
 
-			 	});
+			//  	});
 
 
 
@@ -541,11 +544,9 @@ var charnames =
 				{	
 
 					var ttl = $(this).parent().attr("id");
-
-					var xactuall = charnames[ttl].family
-
-					$(this).attr("href","http://gameofthrones.wikia.com/wiki/"+xactuall);
-
+					var xactuall = charnames[ttl].family.toUpperCase();
+					var xactuallo = charnames[ttl].family;
+					$(this).attr("id",xactuallo);
 					$(this).text(xactuall);
 
 				});
@@ -650,13 +651,13 @@ var charnames =
 
 				});
 
-								$(".family").each(function(i)
+			$(".family").each(function(i)
 
 						{	
 
 							var ttl = $(this).parent().attr("id");
 
-							var xactuall = charnames[ttl].family.toUpperCase()
+							var xactuall = charnames[ttl].family;
 
 							$(this).text(xactuall);
 
@@ -840,6 +841,7 @@ $(".profpics").click(function(event)
 
 	{
 
+
 		event.preventDefault();
 
 		console.log("PHP!!!");
@@ -853,14 +855,20 @@ $(".profpics").click(function(event)
 		{
 			// var domainRegex = data.match(/(.*?)[^w{3}.]([a-zA-Z0-9]([a-zA-Z0-9-]{0,65}[a-zA-Z0-9])?.)+[a-zA-Z]{2,6}/igm);
 			// var imageRegex =data.match(/img/g); 
-			data.replace("img"," ");
-			data.replace("Robin","Chico");
 
 			// $(data).remove(imageRegex);
 			// $(data).remove(domainRegex);
 			console.log(data);
-			$("#infoholder").html(data);
-
+			var v=data.replace("<script>JSSnippetsStack.push", " ");
+			var vv = v.replace('<script>JSSnippetsStack.push({dependencies:[{"url":"http://slot1.images3.wikia.nocookie.net/__am/1477060702/group/-/wikia_photo_gallery_js","type":"js"},{"url":"http://slot1.images3.wikia.nocookie.net/__am/1477060702/sass/background-dynamic%3Dtrue%26background-image%3Dhttp%253A%252F%252Fimg4.wikia.nocookie.net%252F__cb20150716154804%252Fgameofthrones%252Fimages%252F5%252F50%252FWiki-background%26background-image-height%3D720%26background-image-width%3D1920%26color-body%3D%2523000%26color-body-middle%3D%2523000000%26color-buttons%3D%25231e5467%26color-header%3D%25235f4416%26color-links%3D%252347518e%26color-page%3D%2523d7cbab%26oasisTypography%3D1%26page-opacity%3D100%26widthType%3D0/extensions/wikia/WikiaPhotoGallery/css/gallery.scss","type":"css"}],callback:function(json){WikiaPhotoGalleryView.init(json)},id:"WikiaPhotoGalleryView.init"})</script>'," ");
+			var vvv= vv.replace('id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr mw-content-text">'," ");
+			var vvvv = vvv.replace("floatright","floatleft");
+			$("#infoholder").html(vvvv);	
+			var n =x.replace(/_|%|\(|\)/g, " ");
+			var nn = n.toLowerCase();
+			$("#profilepic").attr("src","got/"+nn+".jpg");
+			$("#title,#holder,.sorter").fadeOut(100);	
+			$("#bigholder").fadeIn(1000);
 
 		});
 
@@ -868,6 +876,50 @@ $(".profpics").click(function(event)
 
 	});
 
+$("#closer").click(function()
+{
+			$("#bigholder").fadeOut(500);
+			$("#title,#holder,.sorter").fadeIn(1000);	
+			
+});
+
+$(".family").click(function(event)
+
+	{
+event.preventDefault();
+
+		console.log("PHP!!!");
+
+		var x=event.target.id;
+
+		var z = $("#getter").val(x);
+
+		$.get("gotfam.php?xxxA="+$("#getter").val(),function(data)
+
+		{
+			// var domainRegex = data.match(/(.*?)[^w{3}.]([a-zA-Z0-9]([a-zA-Z0-9-]{0,65}[a-zA-Z0-9])?.)+[a-zA-Z]{2,6}/igm);
+			// var imageRegex =data.match(/img/g); 
+
+			// $(data).remove(imageRegex);
+			// $(data).remove(domainRegex);
+			console.log(data);
+			var v=data.replace("<script>JSSnippetsStack.push", " ");
+			var vv = v.replace('<script>JSSnippetsStack.push({dependencies:[{"url":"http://slot1.images3.wikia.nocookie.net/__am/1477060702/group/-/wikia_photo_gallery_js","type":"js"},{"url":"http://slot1.images3.wikia.nocookie.net/__am/1477060702/sass/background-dynamic%3Dtrue%26background-image%3Dhttp%253A%252F%252Fimg4.wikia.nocookie.net%252F__cb20150716154804%252Fgameofthrones%252Fimages%252F5%252F50%252FWiki-background%26background-image-height%3D720%26background-image-width%3D1920%26color-body%3D%2523000%26color-body-middle%3D%2523000000%26color-buttons%3D%25231e5467%26color-header%3D%25235f4416%26color-links%3D%252347518e%26color-page%3D%2523d7cbab%26oasisTypography%3D1%26page-opacity%3D100%26widthType%3D0/extensions/wikia/WikiaPhotoGallery/css/gallery.scss","type":"css"}],callback:function(json){WikiaPhotoGalleryView.init(json)},id:"WikiaPhotoGalleryView.init"})</script>'," ");
+			var vvv= vv.replace('id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr mw-content-text">'," ");
+			var vvvv = vvv.replace("floatright","floatleft");
+			$("#infoholder").html(vvvv);	
+			var n =x.replace(/_|%|\(|\)/g, " ");
+			var nn = n.toLowerCase();
+			$("#profilepic").attr("src","got/"+nn+".jpg");
+			$("#title,#holder,.sorter").fadeOut(100);	
+			$("#bigholder").fadeIn(1000);
+
+		});
+
+
+
+
+	});
 
 
 
