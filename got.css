@@ -223,8 +223,9 @@
 a{text-decoration: none;
 
 text-align: center;
-
+    pointer-events:none;
 color:black;
+
 }
 
 @font-face {font-family:tnewr;
@@ -235,48 +236,65 @@ color:black;
 
 
 #getter{display: none;}
-#infoholder{width:90%;
-    position:fixed;
-    margin-top: 5%;
-    margin-left: 5%;
-height:85%;
-background-color: gray;
-overflow-y: scroll;
-text-align: left;}
 
-.caption,.editsection,.spriteedit-pencil,sup{display: none;}
+
+
+#infoholder {
+    width: 48%;
+    padding-right: 2%;
+    /* padding-left: 2%; */
+    font-size: 1.25vw;
+    /* position: fixed; */
+    margin-top: 5%;
+    /* margin-left: 0; */
+    height: 100%;
+    /* background-color: gray; */
+    overflow-y: scroll;
+    /* text-align: left; */
+}
+#closer{font-size: 2vw;
+    font-family: tnewr;
+    position: fixed;
+    cursor:pointer;
+    right: 2%;
+    top: 2%;}
+ #bigholder{
+    display: none;
+    position: fixed;
+    height: 76%;
+    width: 100%;
+    /* background-color: grey; */
+}
+#profilepic{
+    width: 30%;
+    margin-left: 10%;
+    float: left;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+.caption,.floatleft,.editsection,.spriteedit-pencil,sup,.tally,.wikia-menu-button{display: none;}
 figure{display:none;}
+#scriptdestroy,.wikia-button.createpage.add-new-page-experiment-element,.header-column.header-tally,.gallery-image-wrapper.accent,tbody,#gallery-0{display: none;}
+.floatright{display: none;}
 
 
 #title{
 
-    color: white;
-
+    color: black;
     padding-top: 3%;
-
     padding-left: 1%;
-
     padding-right: 1%;
-
     /* top: 29%; */
-
-    background-color: #181818;
-
+    /* background-color: #181818; */
     width: 98%;
-
     font-family: tnewr;
-
     font-size: 3vw;
-
     /* margin-left: 3%; */
-
     /* margin-top: 4%; */
-
-    line-height: 3vw;
-
-    margin-bottom: 1%;
-
-    height: 16vw;}
+    line-height: 2vw;
+    margin-bottom: 4%;
+    /* height: 16vw; */}
 
 
 
@@ -366,11 +384,14 @@ cursor: pointer;
 
 
 
+
 #holder{width:98%;
 
         margin-top: .5%;
 
 	margin-left: 1%;}
+
+
 
 .picholder {
 
@@ -399,11 +420,12 @@ cursor: pointer;
     font-family: tnewr;
 
     font-size: .75vw;
+    cursor: pointer;
 
 }
 
 .profpics {
-
+    cursor: pointer;
     width: 86%;
 
 	margin-top: 10%}
@@ -495,3 +517,5 @@ cursor: pointer;
         margin-top: 2%;
 
         display: inline-block;}
+
+
