@@ -30,8 +30,8 @@ $info = file_get_contents("http://gameofthrones.wikia.com/wiki/".$xxxxL);
 
 
 
-preg_match('/<span class="mw-headline" id="Background">Background(.*?)id="A/s',$info, $subinfo);
+preg_match('/id="mw-content-text"(.*?)id="A/s',$info, $subinfo);
 
 
-print_r($subinfo[0]);
+echo($subinfo[0]);
 
