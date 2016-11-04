@@ -30,7 +30,7 @@ $info = file_get_contents("http://gameofthrones.wikia.com/wiki/".$xxxxL);
 
 
 
-preg_match('/id="WikiaMainContent"(.*?)id="References"/s',$info, $subinfo);
+preg_match('/<article id="WikiaMainContent"(.*?)id="References"/s',$info, $subinfo);
 
 
 echo($subinfo[0]);
