@@ -30,6 +30,39 @@
     .e {font-size: 3vw;}
     .f {font-size: 3vw;}
     .g {font-size: 3vw;}
+
+
+#bigholder {
+    position: static;}
+
+#closer {
+    font-size: 6vw;}    
+
+#profilepic {
+    width: 60%;
+    margin-left: 20%;
+     float: none; 
+     margin-right: 0%;}
+
+#titlepp {
+    float: none;
+    font-size: 10vw;
+    text-align: center;}
+
+    #infoholder {
+    width: 96%;
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 5.1vw;
+    margin-top: 5%;}
+
+    h1, h2, h3, h4, h5, h6 {
+    font-size: 6.5vw;}
+
+    .mw-headline {
+    font-size: 6.5vw;
+}
+
 }
 /*/*PHONE land screen>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
