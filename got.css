@@ -251,6 +251,7 @@ color:black;
     /* background-color: gray; */
     overflow-y: scroll;
     /* text-align: left; */
+    font-family: tnewr;
 }
 #closer{font-size: 2vw;
     font-family: tnewr;
@@ -275,7 +276,7 @@ color:black;
 
 #See_also,.caption,.floatleft,.editsection,.spriteedit-pencil,sup,hr,.tally,.wikia-menu-button{display: none;}
 figure{display:none;}
-.header-column.header-title,.pi-item.pi-item-spacing.pi-title,#Image_gallery,#toctitle,.image.image-thumbnail,.toctoggle,.wikia-button.comments.secondary.talk,#WikiaArticleMsg,#scriptdestroy,.wikia-button.createpage.add-new-page-experiment-element,.header-column.header-tally,.gallery-image-wrapper.accent,tbody,#gallery-0{display: none;}
+i,.header-column.header-title,.pi-item.pi-item-spacing.pi-title,#Image_gallery,#toctitle,.image.image-thumbnail,.toctoggle,.wikia-button.comments.secondary.talk,#WikiaArticleMsg,#scriptdestroy,.wikia-button.createpage.add-new-page-experiment-element,.header-column.header-tally,.gallery-image-wrapper.accent,tbody,#gallery-0{display: none;}
 .floatright{display: none;}
 
 .mw-headline{font-size:2vw}
