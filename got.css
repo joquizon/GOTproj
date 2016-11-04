@@ -273,12 +273,16 @@ color:black;
     margin-right: 5%;
 }
 
-.caption,.floatleft,.editsection,.spriteedit-pencil,sup,.tally,.wikia-menu-button{display: none;}
+#See_also,.caption,.floatleft,.editsection,.spriteedit-pencil,sup,hr,.tally,.wikia-menu-button{display: none;}
 figure{display:none;}
-#scriptdestroy,.wikia-button.createpage.add-new-page-experiment-element,.header-column.header-tally,.gallery-image-wrapper.accent,tbody,#gallery-0{display: none;}
+.header-column.header-title,.pi-item.pi-item-spacing.pi-title,#Image_gallery,#toctitle,.image.image-thumbnail,.toctoggle,.wikia-button.comments.secondary.talk,#WikiaArticleMsg,#scriptdestroy,.wikia-button.createpage.add-new-page-experiment-element,.header-column.header-tally,.gallery-image-wrapper.accent,tbody,#gallery-0{display: none;}
 .floatright{display: none;}
 
-
+.mw-headline{font-size:2vw}
+h1,h2,h3,h4,h5,h6{font-size:2vw;
+margin-bottom: 2%;
+margin-top: 3%
+}
 #title{
 
     color: black;
@@ -316,7 +320,12 @@ figure{display:none;}
 
 }
 
-
+#titlepp {
+    float: left;
+    font-size: 3vw;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
 
 
 
