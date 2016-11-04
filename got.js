@@ -17,10 +17,7 @@ for(var i = 0; i <109; i++)
 
 
 
-function JSSnippetsStack()
-{
-console.log("Ned's dead");
-};
+
 
 
 var charnames = 
@@ -865,16 +862,20 @@ $(".profpics").click(function(event)
 			// $(data).remove(imageRegex);
 			// $(data).remove(domainRegex);
 			console.log(data);
-			var v=data.replace("<script>JSSnippetsStack.push", " ");
+			var v=data.replace("<script>", '<p id="scriptdestroy">');
 			var vv = v.replace('<script>JSSnippetsStack.push({dependencies:[{"url":"http://slot1.images3.wikia.nocookie.net/__am/1477060702/group/-/wikia_photo_gallery_js","type":"js"},{"url":"http://slot1.images3.wikia.nocookie.net/__am/1477060702/sass/background-dynamic%3Dtrue%26background-image%3Dhttp%253A%252F%252Fimg4.wikia.nocookie.net%252F__cb20150716154804%252Fgameofthrones%252Fimages%252F5%252F50%252FWiki-background%26background-image-height%3D720%26background-image-width%3D1920%26color-body%3D%2523000%26color-body-middle%3D%2523000000%26color-buttons%3D%25231e5467%26color-header%3D%25235f4416%26color-links%3D%252347518e%26color-page%3D%2523d7cbab%26oasisTypography%3D1%26page-opacity%3D100%26widthType%3D0/extensions/wikia/WikiaPhotoGallery/css/gallery.scss","type":"css"}],callback:function(json){WikiaPhotoGalleryView.init(json)},id:"WikiaPhotoGalleryView.init"})</script>'," ");
 			var vvv= vv.replace('id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr mw-content-text">'," ");
 			var vvvv = vvv.replace("floatright","floatleft");
-			$("#infoholder").html(vvvv);	
+			var vvvvvv =vvvv.replace(/{/g, "(");	
+			var vvvvvvv =vvvvvv.replace(/}/g, ")");
+			$("#infoholder").html(vvvvvvv);	
 			var n =x.replace(/_|%|\(|\)/g, " ");
 			var nn = n.toLowerCase();
+			var nN = n.toUpperCase();
 			$("#profilepic").attr("src","got/"+nn+".jpg");
 			$("#title,#holder,.sorter").fadeOut(100);	
 			$("#bigholder").fadeIn(500);
+			$("#titlepp").text(nN);
 
 		});
 
@@ -914,12 +915,16 @@ event.preventDefault();
 			var vvv= vv.replace('id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr mw-content-text">'," ");
 			var vvvv = vvv.replace("floatright","floatleft");
 			var vvvvv = vvvv.replace('<div style=','<div style="display:none"');
-			$("#infoholder").html(vvvvv);	
+			var vvvvvv =vvvvv.replace(/{/g, "(");	
+			var vvvvvvv =vvvvvv.replace(/}/g, ")");
+			$("#infoholder").html(vvvvvvv);	
 			var n =x.replace(/_|%|\(|\)/g, " ");
 			var nn = n.toLowerCase();
 			$("#profilepic").attr("src","got/"+nn+".jpg");
 			$("#title,#holder,.sorter,.sorter2").fadeOut(100);	
 			$("#bigholder").fadeIn(500);
+						var nN = n.toUpperCase();
+			$("#titlepp").text(nN);
 
 		});
 
