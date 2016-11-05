@@ -100,6 +100,22 @@
 	.e {font-size: 2vw;}
 	.f {font-size: 2vw;}
 	.g {font-size: 2vw;}
+
+
+	#titlepp {    margin-top: 6%;
+    font-size: 5vw;}
+
+    h1, h2, h3, h4, h5, h6 {
+    font-size: 2.75vw;}
+
+	#infoholder {
+    font-size: 2.5vw;}
+
+    .mw-headline {
+    font-size: 3vw;}
+
+    #closer {
+    font-size: 4vw;}
 }
 
 /*/*TABLET PORTRAIT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
