@@ -875,7 +875,7 @@ $(".profpics").click(function(event)
 			var n =x.replace(/_|%|\(|\)/g, " ");
 			var nn = n.toLowerCase();
 			$("#profilepic").attr("src","got/"+nn+".jpg");
-			$("#title,#holder,.sorter").fadeOut(100);	
+			$("#title,#holder").fadeOut(100);	
 			$("#bigholder").fadeIn(500);
 
 
@@ -896,7 +896,7 @@ $("#closer").click(function()
 			$("#infoholder").scrollTop(0);
 			$(window).scrollTop(0);
 			$("#bigholder").fadeOut(500);
-			$("#title,#holder,.sorter,.sorter2").fadeIn(500);	
+			$("#title,#holder").fadeIn(500);	
 
 			
 });
@@ -923,16 +923,17 @@ event.preventDefault();
 			console.log(data);
 			var v=data.replace("<script>", '<p id="scriptdestroy">');
 			var vv = v.replace('</script>',"</p>");
-			var vvv= vv.replace('id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr mw-content-text">'," ");
+			var vvv= vv.replace('id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr.mw-content-text">'," ");
 			var vvvv = vvv.replace("floatright","floatleft");
 			var vvvvv = vvvv.replace('<div style=','<div style="display:none"');
 			var vvvvvv =vvvvv.replace(/{/g, "(");	
 			var vvvvvvv =vvvvvv.replace(/}/g, ")");
-			$("#infoholder").html(vvvvvvv);	
+			var vvvvvvvv=vvvvvvv.replace("<script>JSSnippetsStack", '<p id="scriptdestroy">');
+			$("#infoholder").html(vvvvvvvv);	
 			var n =x.replace(/_|%|\(|\)/g, " ");
 			var nn = n.toLowerCase();
-			$("#profilepic").attr("src","got/"+nn+".jpg");
-			$("#title,#holder,.sorter,.sorter2").fadeOut(100);	
+			$("#profilepic").attr("src","houseflags/"+x+".jpg");
+			$("#title,#holder").fadeOut(100);	
 			$("#bigholder").fadeIn(500);
 						var nN = n.toUpperCase();
 			$("#titlepp").text(nN);
