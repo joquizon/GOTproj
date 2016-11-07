@@ -232,7 +232,17 @@ color:black;
 
             src: url(nimbustnew.otf);}
 
-            #loader{display: none;}
+            #loader{display: none;
+    background: black;
+    position: fixed;
+    width: 100%;
+    font-size: 7vw;
+    text-align: center;
+    color: white;
+    margin-top: 13%;
+    height: 50%;
+    padding-top: 15%;
+}
 
 
 #getter{display: none;}
