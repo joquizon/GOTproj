@@ -1,7 +1,7 @@
 $(document).ready(function() 
 
 {
-
+$("#loader").show();
 	console.log("winter is coming!");
 
 
@@ -264,7 +264,7 @@ var charnames =
 
 
 
-			,hotpie = {linkname:"Pie_Hot", og:"Pie Hot",titlepic:"hot pie",family:" ",bg:"red",appearance1:"#C9A735",appearance2:"#5a5a5a",appearance3:"#5a5a5a",appearance4:"#C9A735",appearance5:"white",appearance6:"white",appearance7:"white"}
+			,hotpie = {linkname:"Hot_Pie", og:"Pie Hot",titlepic:"hot pie",family:" ",bg:"red",appearance1:"#C9A735",appearance2:"#5a5a5a",appearance3:"#5a5a5a",appearance4:"#C9A735",appearance5:"white",appearance6:"white",appearance7:"white"}
 
 
 
@@ -485,6 +485,7 @@ var charnames =
 		$(".profpics").each(function(i)
 
 		{
+			 
 
 			// $(".links").each(function(i)
 
@@ -666,6 +667,8 @@ var charnames =
 						});
 
 				});
+
+$("#loader").hide(); 
 
 		};
 
