@@ -683,6 +683,7 @@ $("#loader").hide();
 		{
 
 			$("#loader").show(); 
+			$(".picholder").hide();
 
 		
 
@@ -728,7 +729,9 @@ $("#loader").hide();
 
 						$(this).css("background-color",charnames[ttl].bg);
 
-					});$("#loader").hide(); 
+					});
+				$("#loader").hide(); 
+				$(".picholder").show();
 
 				next();
 
@@ -753,6 +756,7 @@ $("#loader").hide();
 		{
 
 			$("#loader").show(); 
+			$(".picholder").hide();
 
 
 
@@ -783,6 +787,7 @@ $("#loader").hide();
 				populator();
 
 				$("#loader").hide(); 
+				$(".picholder").show();
 
 				next();
 
@@ -799,6 +804,7 @@ $("#loader").hide();
 		{
 
 			$("#loader").show(); 
+			$(".picholder").hide();
 
 			function SortByName(a, b)
 
@@ -827,6 +833,7 @@ $("#loader").hide();
 				populator();
 
 				$("#loader").hide(); 
+				$(".picholder").show();
 
 				next();
 
