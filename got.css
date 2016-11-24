@@ -233,15 +233,14 @@ color:black;
             src: url(nimbustnew.otf);}
 
             #loader{display: none;
-    background: black;
     position: fixed;
     width: 100%;
     font-size: 7vw;
     text-align: center;
-    color: white;
-    margin-top: 13%;
-    height: 50%;
-    padding-top: 15%;
+    color: black;
+    margin-top: 5%;
+    height: 10%;
+    padding-top: 5%;
 }
 
 
