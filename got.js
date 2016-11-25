@@ -2,7 +2,7 @@ $(document).ready(function()
 
 {
 $("#loader").show();
-	console.log("winter is coming!");
+	// console.log("winter is coming!");
 
 
 
@@ -657,7 +657,7 @@ var charnames =
 							var xactuall = charnames[ttl].family;
 						var xactuallrep = xactuall.replace("_"," ");
 						var xactuallrepp = xactuallrep.replace("_"," ").toUpperCase();
-						console.log (xactuallrepp);
+						// console.log (xactuallrepp);
 						$(this).text(xactuallrepp);
 
 							$(this).text(xactuallrepp);
@@ -724,7 +724,7 @@ $("#loader").hide();
 						var xactuall = charnames[ttl].family.toUpperCase();
 						var xactuallrep = xactuall.replace("_"," ");
 						var xactuallrepp = xactuallrep.replace("_"," ");
-						console.log (xactuallrepp);
+						// console.log (xactuallrepp);
 						$(this).text(xactuallrepp);
 
 						$(this).css("background-color",charnames[ttl].bg);
@@ -856,7 +856,7 @@ $(".profpics").click(function(event)
 
 		event.preventDefault();
 
-		console.log("PHP!!!");
+		// console.log("PHP!!!");
 
 		var x=event.target.id;
 
@@ -870,7 +870,7 @@ $(".profpics").click(function(event)
 
 			// $(data).remove(imageRegex);
 			// $(data).remove(domainRegex);
-			console.log(data);
+			// console.log(data);
 
 			var v=data.replace("<script>", '<p id="scriptdestroy">');
 			var vv = v.replace('<script>JSSnippetsStack.push({dependencies:[{"url":"http://slot1.images3.wikia.nocookie.net/__am/1477060702/group/-/wikia_photo_gallery_js","type":"js"},{"url":"http://slot1.images3.wikia.nocookie.net/__am/1477060702/sass/background-dynamic%3Dtrue%26background-image%3Dhttp%253A%252F%252Fimg4.wikia.nocookie.net%252F__cb20150716154804%252Fgameofthrones%252Fimages%252F5%252F50%252FWiki-background%26background-image-height%3D720%26background-image-width%3D1920%26color-body%3D%2523000%26color-body-middle%3D%2523000000%26color-buttons%3D%25231e5467%26color-header%3D%25235f4416%26color-links%3D%252347518e%26color-page%3D%2523d7cbab%26oasisTypography%3D1%26page-opacity%3D100%26widthType%3D0/extensions/wikia/WikiaPhotoGallery/css/gallery.scss","type":"css"}],callback:function(json){WikiaPhotoGalleryView.init(json)},id:"WikiaPhotoGalleryView.init"})</script>'," ");
@@ -916,7 +916,7 @@ $(".family").click(function(event)
 	{
 event.preventDefault();
 
-		console.log("PHP!!!");
+		// console.log("PHP!!!");
 
 		var x=event.target.id;
 
@@ -930,7 +930,7 @@ event.preventDefault();
 
 			// $(data).remove(imageRegex);
 			// $(data).remove(domainRegex);
-			console.log(data);
+			// console.log(data);
 			var v=data.replace("<script>", '<p id="scriptdestroy">');
 			var vv = v.replace('</script>',"</p>");
 			var vvv= vv.replace('id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr.mw-content-text">'," ");
