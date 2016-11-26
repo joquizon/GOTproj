@@ -174,8 +174,11 @@ $(document).ready(function()
 
 		});
 
+// 	var f =X
+// 	console.log(f)
+// 	var ff = f.replace(/_/g, " ").toUpperCase();
 
-
+// $(".proftitle,.family").replaceWith(f);
 
 
 
@@ -222,8 +225,8 @@ $(".profpics").click(function(event)
 
 			var tot = event.target.parentNode.parentNode.id;
 			var totter = tot.toUpperCase();
-
-			$("#titlepp").text(x);
+			var xR = x.replace(/_/g," ").replace(/%27/g,"'").replace(/(/g,"</p><br><p id='titlepp'>").toUpperCase();
+			$("#titlepp").text(xR);
 
 		});
 
@@ -276,7 +279,7 @@ event.preventDefault();
 			$("#profilepic").attr("src","houseflags/"+x+".jpg");
 			$("#title,#holder").fadeOut(100);	
 			$("#bigholder").fadeIn(500);
-						var nN = n.toUpperCase();
+						var nN = n.replace(/_/g,"  ").toUpperCase();
 			$("#titlepp").text(nN);
 
 		});
